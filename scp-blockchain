@@ -1,0 +1,4 @@
+# scp -rp ~/.augur/blockchain deploy@crypto.cab:/home/deploy/.augur-stage/blockchain
+scp -rp ~/.augur/extra deploy@crypto.cab:/home/deploy/.augur-stage/extra
+scp -rp ~/.augur/nodes deploy@crypto.cab:/home/deploy/.augur-stage/nodes
+scp -rp ~/.augur/state deploy@crypto.cab:/home/deploy/.augur-stage/state
