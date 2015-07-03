@@ -1,4 +1,5 @@
-# scp -rp ~/.augur/blockchain deploy@crypto.cab:/home/deploy/.augur-stage/blockchain
-scp -rp ~/.augur/extra deploy@crypto.cab:/home/deploy/.augur-stage/extra
-scp -rp ~/.augur/nodes deploy@crypto.cab:/home/deploy/.augur-stage/nodes
-scp -rp ~/.augur/state deploy@crypto.cab:/home/deploy/.augur-stage/state
+scp -rp ~/.ethereum/blockchain deploy@crypto.cab:/home/deploy/.ethereum/blockchain
+scp -rp ~/.ethereum/extra deploy@crypto.cab:/home/deploy/.ethereum/extra
+scp -rp ~/.ethereum/nodes deploy@crypto.cab:/home/deploy/.ethereum/nodes
+scp -rp ~/.ethereum/state deploy@crypto.cab:/home/deploy/.ethereum/state
+
