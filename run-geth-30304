@@ -1,0 +1,3 @@
+# ~/src/go-ethereum/build/bin/geth --rpc --rpccorsdomain "http://client.augur.net http://localhost:8080" --shh --unlock "0x63524e3fe4791aefce1e932bbfb3fdf375bfad89" --etherbase "0x63524e3fe4791aefce1e932bbfb3fdf375bfad89" --maxpeers "32" console
+~/src/go-ethereum/build/bin/geth --rpc --rpcapi "shh,db,eth,net,web3" --ipcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --port "30304" --rpcport "8547" --rpccorsdomain "http://client.augur.net http://localhost:8080" --shh --unlock "0x63524e3fe4791aefce1e932bbfb3fdf375bfad89" --etherbase "0x63524e3fe4791aefce1e932bbfb3fdf375bfad89" --maxpeers "32" console
+
