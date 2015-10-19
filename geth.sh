@@ -14,9 +14,7 @@ rpcapi="shh,db,eth,net,web3"
 ipcapi="admin,db,eth,debug,miner,net,shh,txpool,personal,web3"
 whitelist="http://eth1.augur.net http://eth2.augur.net http://eth3.augur.net http://eth4.augur.net http://eth5.augur.net http://augur.divshot.io http://augur-stage.herokuapp.com http://client.augur.net http://localhost:8080"
 
-echo $1
 if [ "${1}" = "-t" ]; then
-    echo $1
     datadir="$HOME/.augur-test"
     testargs="--mine --nodiscover"
     network="10101"
