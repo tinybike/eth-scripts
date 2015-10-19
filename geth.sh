@@ -10,9 +10,7 @@ network="7"
 address="0x639b41c4d3d399894f2a57894278e1653e7cd24c"
 maxpeers="64"
 passfile="${symlink}/.password"
-rpcapi="shh,db,eth,net,web3"
-ipcapi="admin,db,eth,debug,miner,net,shh,txpool,personal,web3"
-whitelist="http://eth1.augur.net http://eth2.augur.net http://eth3.augur.net http://eth4.augur.net http://eth5.augur.net http://augur.divshot.io http://augur-stage.herokuapp.com http://client.augur.net http://localhost:8080"
+testargs=""
 
 if [ "${1}" = "-t" ]; then
     datadir="$HOME/.augur-test"
@@ -26,4 +24,4 @@ if [ -L $symlink ]; then
 fi
 ln -s $datadir $symlink
 
-geth $testargs --networkid $network --datadir $symlink --rpc --shh --rpcapi $rpcapi --ipcapi $ipcapi --rpccorsdomain $whitelist --maxpeers $maxpeers --etherbase $address --unlock $address --password $passfile console
+geth $testargs --networkid $network --datadir $symlink --rpc --shh --rpcapi "shh,db,eth,net,web3" --ipcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --rpccorsdomain "http://eth1.augur.net http://eth2.augur.net http://eth3.augur.net http://eth4.augur.net http://eth5.augur.net http://augur.divshot.io http://augur-stage.herokuapp.com http://client.augur.net http://localhost:8080" --maxpeers $maxpeers --etherbase $address --unlock $address --password $passfile console
