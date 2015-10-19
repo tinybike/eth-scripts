@@ -1,4 +1,0 @@
-scp -rp ~/.ethereum/blockchain deploy@crypto.cab:/home/deploy/.ethereum/blockchain
-scp -rp ~/.ethereum/extra deploy@crypto.cab:/home/deploy/.ethereum/extra
-scp -rp ~/.ethereum/nodes deploy@crypto.cab:/home/deploy/.ethereum/nodes
-scp -rp ~/.ethereum/state deploy@crypto.cab:/home/deploy/.ethereum/state

@@ -1,4 +1,0 @@
-rm -Rf blockchain
-rm -Rf extra
-rm -Rf nodes
-rm -Rf state

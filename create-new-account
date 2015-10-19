@@ -1,1 +1,0 @@
-geth --networkid 1010101 --datadir /home/jack/.augur --protocolversion 59 account new

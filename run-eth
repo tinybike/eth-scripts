@@ -1,1 +1,0 @@
-~/src/cpp-ethereum/build/eth/eth --mining on --force-mining --json-rpc --genesis-nonce 10101 --network-id 10101 --db-path /home/jack/.cpp-ethereum --console
