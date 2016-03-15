@@ -3,8 +3,9 @@ upstream augur-node-static {
 }
 
 server {
+    listen              80;
     listen              443 ssl;
-    server_name         www.augur.net;
+    server_name         local.augur.net;
     ssl_certificate     /etc/ssl/localcerts/STAR.augur.net.chained.crt;
     ssl_certificate_key /etc/ssl/localcerts/STAR.augur.net.key;
 
@@ -33,13 +34,6 @@ server {
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header Host $http_host;
         proxy_set_header X-NginX-Proxy true;
-
         proxy_pass http://augur-node-static/;
     }
-}
-
-server {
-    listen  80;
-    server_name www.augur.net;
-    rewrite ^/(.*) https://www.augur.net/$1 permanent;
 }
